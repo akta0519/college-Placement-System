@@ -1,0 +1,248 @@
+* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #004080; /* Dark blue background */
+    color: white;
+}
+/* Logo styling */
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+
+}
+
+/* Title styling */
+.title {
+    flex: 1;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation bar styling */
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0059b3;
+    padding: 10px 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #ffcc00; /* Hover effect */
+}
+
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slide.active {
+    display: block;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.nav span {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.nav span:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stat {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.stat:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styles */
+.buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e8491d;
+}
+
+/* Section Styles */
+section {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+/* Section styling */
+.scroll-section {
+    padding: 100px 20px; /* Padding to avoid nav overlap */
+    /* min-height: 100vh; Each section fills at least one screen */
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    scroll-margin-top: 60px; /* Prevent content from being hidden behind nav */
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* List styling for events, placements, and announcements */
+.event-list, .placement-list, .announcement-list {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-list div, .placement-list div, .announcement-list div {
+    width: 80%;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #ffcc00;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.event-list div:hover, .placement-list div:hover, .announcement-list div:hover {
+    background-color: #f0f0f0;
+}
+
+/* Links inside the sections */
+.event-list a, .placement-list a, .announcement-list a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event-list a:hover, .placement-list a:hover, .announcement-list a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Optional: add a unique color to headings */
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #ffcc00; /* Optional: add color to the links */
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}

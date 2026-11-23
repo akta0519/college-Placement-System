@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.png" alt="College Logo"> <!-- Corner-side logo -->
+        </div>
+        <div class="title">
+            <h1>College Placement System Portal</h1> <!-- Center-aligned title -->
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <a href="mainDashboard.html">Home</a>
+        <a href="company.html">Companies</a>
+        <a href="policy.html">Policy Page</a>
+        <a href="#footer">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+    
+        <section class="slider">
+            <div class="slide active">
+                <img src="image1.jpg" alt="Hospital Image 1">
+            </div>
+            <div class="slide">
+                <img src="image2.jpg" alt="Hospital Image 2">
+            </div>
+            <div class="slide">
+                <img src="image3.jpg" alt="Hospital Image 3">
+            </div>
+    
+            <!-- Navigation for Slides -->
+            <div class="nav">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+        </section>
+
+        <div class="stats">
+            <div class="stat" id="totalStudents">
+                <h3>Total Students Registered</h3>
+                <p>1500</p>
+            </div>
+            <div class="stat" id="totalJobs">
+                <h3>Total Jobs Available</h3>
+                <p>200</p>
+            </div>
+            <div class="stat" id="studentsPlaced">
+                <h3>Students Placed</h3>
+                <p>1200</p>
+            </div>
+            <div class="stat" id="offCampusApps">
+                <h3>Off-Campus Applications</h3>
+                <p>300</p>
+            </div>
+        </div>
+
+        <section id="upcomingEventsSection" class="scroll-section">
+            <h2>Upcoming Events</h2>
+            <div id="upcomingEvents" class="event-list"></div>
+        </section>
+    
+        <section id="recentPlacementsSection" class="scroll-section">
+            <h2>Recent Placements</h2>
+            <div id="recentPlacements" class="placement-list"></div>
+        </section>
+    
+        <section id="announcementsSection" class="scroll-section">
+            <h2>Announcements</h2>
+            <div id="announcements" class="announcement-list"></div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer-container">
+                <!-- Timing and Contact Section -->
+                <div class="footer-section">
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM to 5:00 PM</p>
+                    <h3>Email</h3>
+                    <p>gecm@collegeplacement.com</p>
+                    <h3>Contact Number</h3>
+                    <p>8149323238</p>
+                </div>
+        
+                <!-- Address Section -->
+                <div class="footer-section">
+                    <h3>Our Campus</h3>
+                    <p>Government Engineering college </p>
+                    <p>Modasa,Gujarat</p>
+                </div>
+        
+                <!-- Social Media Section -->
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <a href="#" target="_blank">Facebook</a> |
+                    <a href="#" target="_blank">Google</a> |
+                    <a href="#" target="_blank">Instagram</a> |
+                    <a href="#" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Resister.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form">
+                <h2>Register</h2>
+                <form id="registerForm" action="register.php" method="POST">
+                    <!-- Full Name -->
+                    <input type="text" name="full_name" id="fullName" placeholder="Full Name" required>
+
+                    <!-- Unique Student ID -->
+                    <input type="text" name="student_id" id="studentID" placeholder="Student ID" required>
+
+                    <!-- Date of Birth -->
+                    <input type="date" name="birthdate" id="birthdate" placeholder="Date of Birth" required>
+
+                    <!-- College Year -->
+                    <select name="college_year" id="collegeYear" required>
+                        <option value="" disabled selected>Select College Year</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                    </select>
+
+                    <!-- Semester -->
+                    <select name="semester" id="semester" required>
+                        <option value="" disabled selected>Select Semester</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+
+                    <!-- College Name -->
+                    <input type="text" name="college_name" id="collegeName" placeholder="College Name" required>
+
+                    <!-- Mobile Number -->
+                    <input type="tel" name="mobile_number" id="mobileNumber" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+
+                    <!-- Email ID -->
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+
+                    <!-- Password -->
+                    <input type="password" name="password" id="password" placeholder="Create Password" required>
+
+                    <!-- User Type -->
+                    <select name="user_type" id="userType" required>
+                        <option value="" disabled selected>Select User Type</option>
+                        <option value="student">Student</option>
+                    </select>
+
+                    <!-- Submit Button -->
+                    <button><a href="login.html" type="Resister">Resister</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="register-script.js"></script>
+</body>
+</html>

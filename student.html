@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <nav>
+        <a href="#Profile">Profile</a>
+        <a href="#apply">Apply for Jobs</a>
+        <a href="#myapplication">My Applications</a>
+        <a href="#">Off-Campus Jobs</a>
+        <a href="policy.html">Policy Page</a>
+        <a href="#footer">Contact</a>
+        <a href="mainDeshboard.html">Logout</a>
+    </nav>
+    <section id="Profile">
+    <div class="profile-card">
+        <h2>Student Profile</h2>
+        <p><strong>Name:</strong> Dilip Prajapati</p>
+        <p><strong>En No:</strong> 123456</p>
+        <p><strong>Email:</strong> dilip123@gmail.com</p>
+        <p><strong>Course:</strong> B.E</p>
+        <button id="editProfile">Edit Profile</button>
+        <button id="changePassword">Change Password</button>
+    </div>
+    </section>
+    
+    <section id="apply">
+        <div class="job-application">
+        <input type="text" id="jobSearch" placeholder="Search for jobs...">
+        <div class="job-card">
+            <h3>TCS</h3>
+            <p><strong>Position:</strong> Software Engineer</p>
+            <p><strong>Eligibility:</strong> CGPA > 8.0</p>
+            <button>Apply</button>
+        </div>
+        <div class="job-card">
+            <h3>Infosys</h3>
+            <p><strong>Position:</strong> Data Analyst</p>
+            <p><strong>Eligibility:</strong> CGPA > 7.5</p>
+            <button>Apply</button>
+        </div>
+    </div></section>
+    
+
+    <section id="myapplication">
+        <div class="applications">
+            <h3>Your Applications</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TCS Corp</td>
+                        <td>Software Developer</td>
+                        <td>Applied</td>
+                        <td><button>View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>c
+
+    <footer id="footer">
+        <div class="footer-container">
+            <!-- Timing and Contact Section -->
+            <div class="footer-section">
+                <h3>Office Hours</h3>
+                <p>Monday - Friday: 9:00 AM to 5:00 PM</p>
+                <h3>Email</h3>
+                <p>gecm@collegeplacement.com</p>
+                <h3>Contact Number</h3>
+                <p>8149323238</p>
+            </div>
+    
+            <!-- Address Section -->
+            <div class="footer-section">
+                <h3>Our Campus</h3>
+                <p>Government Engineering college </p>
+                <p>Modasa,Gujarat</p>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <a href="#" target="_blank">Facebook</a> |
+                <a href="#" target="_blank">Google</a> |
+                <a href="#" target="_blank">Instagram</a> |
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Logout and Job Search -->
+    <script src="student.js"></script>
+</body>
+</html>

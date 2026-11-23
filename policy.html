@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Page</title>
+    <link rel="stylesheet" href="policy.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Placement Policy</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="mainDeshboard.html">Dashboard</a></li>
+                <li><a href="student.html">Apply for Jobs</a></li>
+                <li><a href="student.html">My Applications</a></li>
+                <li><a href="student.html">Off-Campus Jobs</a></li>
+                <li><a href="policy.html" class="active">Policy Page</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="mainDeshboard.html" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="policy-container">
+        <h2>Placement Policy</h2>
+        <p>Welcome to the Placement Policy page. Please read the guidelines below carefully to understand the rules for participating in the placement process.</p>
+        
+        <div class="policy-section">
+            <h3>1. Eligibility Criteria</h3>
+            <p>Students must meet the following criteria:</p>
+            <ul>
+                <li>CGPA of 7.0 or higher.</li>
+                <li>No academic backlogs.</li>
+                <li>Completion of required training.</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h3>2. Job Categories</h3>
+            <ul>
+                <li><strong>Mass Recruitment:</strong> Open to all students.</li>
+                <li><strong>Core:</strong> For specialized positions.</li>
+                <li><strong>Dream:</strong> High-paying roles. Once placed in this category, students cannot apply elsewhere.</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h3>3. Application Limits</h3>
+            <p>Students can apply to up to two companies at a time. After placement, further applications are restricted.</p>
+        </div>
+
+        <div class="policy-section">
+            <h3>4. Off-Campus Jobs</h3>
+            <p>Off-campus job applications are permitted. However, once placed through an on-campus recruitment, students are ineligible for off-campus positions.</p>
+        </div>
+
+        <div class="policy-section">
+            <h3>5. Placement Rules</h3>
+            <ul>
+                <li>Students placed in a higher category cannot apply for lower ones.</li>
+                <li>After two job offers, students are automatically withdrawn from further placement processes.</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h3>6. Code of Conduct</h3>
+            <p>Professional behavior is expected during interviews. Misconduct may result in disqualification from the placement process.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2024 College Placement System | Contact us: <a href="mailto:info@collegeplacement.com">info@collegeplacement.com</a></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('logout').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'mainDashboard.html';
+        });
+    </script>
+</body>
+</html>
